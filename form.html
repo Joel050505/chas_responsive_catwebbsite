@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="form-container">
+        <form action="https://httpbin.org/anything" method="post">
+          <!-- Label for screen readers for="Username" id="Username" -->
+          <h1>Registrera medlemskap</h1>
+          <div class="firstname">
+            <label for="firstname">Förnamn</label>
+            <input id="firstname" name="firstname" type="text" required />
+          </div>
+
+          <div class="lastname">
+            <label for="lastname">Efternamn</label>
+            <input id="lastname" name="lastname" type="text" required />
+          </div>
+
+          <div class="password">
+            <label for="password">Lösenord</label>
+            <input id="password" name="password" type="password" required />
+          </div>
+
+          <div class="email">
+            <label for="email">e-post</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="cat">
+            <label for="favorite-cat">Välj din favorit katt ras</label>
+            <select required name="pet" id="petSelect">
+              <option class="click" value="">Klicka här</option>
+              <option value="bengalcat">Bengalkatt</option>
+              <option value="birman">Birman katt</option>
+              <option value="bombay">Bombay katt</option>
+              <option value="persiancat">Persisk katt</option>
+            </select>
+          </div>
+
+          <div class="agree">
+            <label for="agree"
+              >Godkänn villkoren genom att klicka i boxen brevid</label
+            >
+            <input
+              type="checkbox"
+              value="agree-to-policy"
+              name="agree"
+              id="agree"
+            />
+          </div>
+
+          <div class="send">
+            <button type="submit">Skicka</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
